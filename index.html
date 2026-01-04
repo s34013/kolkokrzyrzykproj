@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kółko i krzyżyk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Kółko i krzyżyk</h1>
+      <div class="controls">
+        <label class="control">
+          <span>Poziom bota</span>
+          <select id="difficulty">
+            <option value="easy">Łatwy</option>
+            <option value="medium" selected>Średni</option>
+            <option value="impossible">Niemożliwy</option>
+          </select>
+        </label>
+
+        <label class="control">
+          <span>Kto zaczyna</span>
+          <select id="starter">
+            <option value="player" selected>Gracz</option>
+            <option value="bot">Bot</option>
+          </select>
+        </label>
+
+        <button id="restart" class="btn">Nowa gra</button>
+      </div>
+    </header>
+
+    <section class="status">
+      <div id="message">Twoja kolej — grasz jako X</div>
+    </section>
+
+    <section class="board" id="board" aria-label="Plansza 3x3">
+      <!-- Cells injected by JS for consistency -->
+    </section>
+
+    <footer class="footer">
+      <small>Minimalistyczna gra w czystym HTML/CSS/JS • 2025</small>
+    </footer>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
