@@ -135,7 +135,7 @@
     }
   }
 
-  // Bot — prosta heurystyka (zwycięż, zablokuj, środek, róg, losowe)
+
   function chooseBotMove(b) {
     const empties = emptyIndices(b);
     if (empties.length === 0) return null;
