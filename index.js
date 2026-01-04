@@ -1,5 +1,4 @@
-// Kółko i krzyżyk — czysty JS
-// Minimalistyczna implementacja z botem (3 poziomy) i animacjami
+
 
 (function () {
   const boardEl = document.getElementById('board');
